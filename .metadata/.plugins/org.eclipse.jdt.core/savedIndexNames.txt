@@ -1,2 +1,4 @@
 INDEX VERSION 1.129+/Users/Wojtek/ZPO_Informatyka_Weeia/.metadata/.plugins/org.eclipse.jdt.core
+3245079333.index
+575340225.index
 3141775227.index
