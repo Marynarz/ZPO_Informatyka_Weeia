@@ -38,7 +38,7 @@ public class zad1 {
 		
 		double score = Math.abs(l1-l2);
 		
-		SortedSet roboczy = new SortedSet()
+		SortedSet roboczy = new SortedSet();
 		
 		
 		

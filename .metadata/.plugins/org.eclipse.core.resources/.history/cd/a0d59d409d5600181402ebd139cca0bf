@@ -1,0 +1,17 @@
+package zad1;
+
+public class SortowanieTekstu {
+	private String[] words;
+	public SortowanieTekstu(String wyrazenie){
+		this.words = wyrazenie.split(" ");
+		System.out.println(wyrazenie.split(" "));
+		System.out.println(this.words[1]);
+	}
+	public String[] getWords(){
+		return this.words;
+	}
+	public void setWords(String wyrazenie){
+		this.words = wyrazenie.split(" ");
+	}
+	
+}
