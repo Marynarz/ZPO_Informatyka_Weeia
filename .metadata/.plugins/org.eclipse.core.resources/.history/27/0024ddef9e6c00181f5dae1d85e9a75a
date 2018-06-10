@@ -1,0 +1,25 @@
+package zad2;
+
+import java.util.List;
+
+public class upperStringList {
+	private List<String>stringList;
+	public upperStringList(List<String>lista){
+		this.stringList = lista;
+	}
+	public List<String> getStringList(){
+		return this.stringList;
+	}
+	public void setStringList(List<String>lista){
+		this.stringList = lista;
+	}
+	public void indListUp(){
+		for(int i=0; i < this.stringList.size();i++){
+			this.stringList.set(i, this.stringList.get(i).toUpperCase());
+		}
+	}
+	public void repAllStr(){
+		this.stringList.replaceAll(s->s.toUpperCase());
+	}
+
+}

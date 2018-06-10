@@ -1,0 +1,18 @@
+package zad2;
+
+import java.util.List;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List listaStr = new ArrayList<String>()
+				{{
+					add("raz");
+					add("dwA");
+					add("tRZY");
+					add("CoSTaM");
+				}};
+	}
+
+}
