@@ -9,9 +9,7 @@ public class zad1 {
 		// TODO Auto-generated method stub
 		try {
 			ListOfPeople pierwszy = new ListOfPeople();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(pierwszy.getResult("pl"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
