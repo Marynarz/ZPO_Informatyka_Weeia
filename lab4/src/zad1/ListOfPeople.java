@@ -35,7 +35,7 @@ public class ListOfPeople {
 		while(it1.hasNext()){
 			String [] roboczy = it1.next().split(" ");
 			if(roboczy[2].equals(countryCode)){
-				System.out.println(roboczy[2]);
+				//System.out.println(roboczy[2]);
 				sumList.add(Integer.parseInt(roboczy[3]));
 			}
 		}
