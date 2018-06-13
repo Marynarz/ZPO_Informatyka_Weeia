@@ -21,6 +21,6 @@ public class zad4 {
         Collections.sort(studenty);
         //studenty.sort(komp);
         for(int i=0;i<studenty.size();i++) System.out.println(studenty.get(i).imie);
- 
+
     }
 }
