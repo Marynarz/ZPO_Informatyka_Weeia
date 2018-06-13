@@ -40,7 +40,11 @@
   },
   {
     "no": 6,
-    "quest": "nosic"
+    "quest": "nosic",
+    "answ": [
+      "wear",
+      "carry"
+    ]
   },
   {
     "no": 7,

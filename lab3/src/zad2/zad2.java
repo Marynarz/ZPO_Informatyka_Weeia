@@ -65,7 +65,7 @@ public class zad2 {
                 add("wear");
                 add("carry");
             }};
-        pytania[5].answ = odp[6];
+        pytania[5].answ = odp[5];
 
         odp[6] = new ArrayList<String>();
         odp[6].add("cat");
@@ -94,8 +94,9 @@ public class zad2 {
         catch(Exception e){
             System.out.println("Error");
         }
-         **/
+        **/
         gamePlay gra1 = new gamePlay();
+        gra1.startGame();
 
     }
 }

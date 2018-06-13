@@ -1,0 +1,48 @@
+[
+  {
+    "answered": "wear",
+    "isOk": true,
+    "no": 1,
+    "quest": "nosic",
+    "answ": [
+      "wear",
+      "carry"
+    ]
+  },
+  {
+    "answered": "kmputer",
+    "isOk": false,
+    "no": 2,
+    "quest": "komputer",
+    "answ": [
+      "computer"
+    ]
+  },
+  {
+    "answered": "dog",
+    "isOk": true,
+    "no": 3,
+    "quest": "pies",
+    "answ": [
+      "dog"
+    ]
+  },
+  {
+    "answered": "walk",
+    "isOk": false,
+    "no": 4,
+    "quest": "biec",
+    "answ": [
+      "run"
+    ]
+  },
+  {
+    "answered": "name",
+    "isOk": true,
+    "no": 5,
+    "quest": "imie",
+    "answ": [
+      "name"
+    ]
+  }
+]
