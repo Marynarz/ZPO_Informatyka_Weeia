@@ -10,6 +10,7 @@ import java.util.List;
 
 public class zad2 {
     public static void main(String [] args){
+        /**
         testGen [] pytania = new testGen[10];
         List<String> pyt = new ArrayList<String>()
         {{
@@ -93,7 +94,8 @@ public class zad2 {
         catch(Exception e){
             System.out.println("Error");
         }
-
+         **/
+        gamePlay gra1 = new gamePlay();
 
     }
 }
