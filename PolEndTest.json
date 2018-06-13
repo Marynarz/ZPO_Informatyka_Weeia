@@ -1,0 +1,74 @@
+[
+  {
+    "no": 1,
+    "quest": "krzyczec",
+    "answ": [
+      "scream",
+      "shout",
+      "cry"
+    ]
+  },
+  {
+    "no": 2,
+    "quest": "biec",
+    "answ": [
+      "run"
+    ]
+  },
+  {
+    "no": 3,
+    "quest": "pies",
+    "answ": [
+      "dog"
+    ]
+  },
+  {
+    "no": 4,
+    "quest": "komputer",
+    "answ": [
+      "computer"
+    ]
+  },
+  {
+    "no": 5,
+    "quest": "przemieszczac",
+    "answ": [
+      "shift",
+      "move",
+      "displace"
+    ]
+  },
+  {
+    "no": 6,
+    "quest": "nosic"
+  },
+  {
+    "no": 7,
+    "quest": "kot",
+    "answ": [
+      "cat"
+    ]
+  },
+  {
+    "no": 8,
+    "quest": "jajko",
+    "answ": [
+      "egg"
+    ]
+  },
+  {
+    "no": 9,
+    "quest": "samolot",
+    "answ": [
+      "airplane",
+      "aircraft"
+    ]
+  },
+  {
+    "no": 10,
+    "quest": "imie",
+    "answ": [
+      "name"
+    ]
+  }
+]
