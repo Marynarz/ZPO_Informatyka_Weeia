@@ -11,7 +11,7 @@ public class zad2 {
         List<Cyclist>kolarze = new LinkedList<Cyclist>();
         String str;
         try{
-            BufferedReader pliczek = new BufferedReader(new FileReader("kolarze.txt"));
+            BufferedReader pliczek = new BufferedReader(new FileReader("/home/wojtek/ZPO_Informatyka_Weeia/lab2/kolarze.txt"));
             int i=1;
             while((str = pliczek.readLine())!=null){
                 String [] temp = str.split(" "); //imie[0],nazwisko[1],predkosc[2]
@@ -23,6 +23,7 @@ public class zad2 {
             e.printStackTrace();
             System.exit(0);
         }
+        System.out.println(kolarze);
 
 
 
