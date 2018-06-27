@@ -15,17 +15,17 @@ public class zad2 {
             int i=1;
             while((str = pliczek.readLine())!=null){
                 String [] temp = str.split(" "); //imie[0],nazwisko[1],predkosc[2]
-                kolarze.add(new Cyclist(i,temp[0],temp[1],Float.parseFloat(temp[2])));
+                kolarze.add(new Cyclist(i,temp[0],temp[1],Double.parseDouble(temp[2]),100));
                 ++i;
             }
-
+            pliczek.close();
         }catch(Exception e){
             e.printStackTrace();
             System.exit(0);
         }
-        System.out.println(kolarze);
-
-
+        for(int i=0;i<kolarze.size();i++){
+            kolarze.get(i).start();
+        }
 
     }
 }
