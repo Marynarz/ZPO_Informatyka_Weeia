@@ -22,7 +22,7 @@ public class Cyclist implements Runnable {
             while(this.distance<=this.distanceMax){
                 this.distance += this.velo*25;
                 System.out.println(this.bib+" "+this.imie+" "+this.nazwisko+": dystans przebyty: "+this.distance/1000);
-                Thread.sleep(1);
+                Thread.sleep(1000);
             }
         }catch(InterruptedException e){
             System.exit(0);

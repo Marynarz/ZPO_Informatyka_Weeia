@@ -1,7 +1,6 @@
 package zad2;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.util.LinkedList;
 import java.util.List;
@@ -15,7 +14,7 @@ public class zad2 {
             int i=1;
             while((str = pliczek.readLine())!=null){
                 String [] temp = str.split(" "); //imie[0],nazwisko[1],predkosc[2]
-                kolarze.add(new Cyclist(i,temp[0],temp[1],Double.parseDouble(temp[2]),100));
+                kolarze.add(new Cyclist(i,temp[0],temp[1],Double.parseDouble(temp[2]),20));
                 ++i;
             }
             pliczek.close();
@@ -25,6 +24,14 @@ public class zad2 {
         }
         for(int i=0;i<kolarze.size();i++){
             kolarze.get(i).start();
+
+            try{
+                Thread.sleep(4000);
+                //kolarze.get(i).join();
+            }catch(InterruptedException e){
+                System.exit(0);
+            }
+
         }
 
     }
