@@ -7,7 +7,7 @@ public class Cyclist implements Runnable, Comparator<Cyclist> {
     public String nazwisko;
     public Integer bib;
     public double velo;
-    private double distance;
+    public double distance;
     private double distanceMax;
     private Thread th;
     private RaceHandler rH;
@@ -31,16 +31,18 @@ public class Cyclist implements Runnable, Comparator<Cyclist> {
         this.rH = rh;
     }
     public void run(){
-        try{
-            while(this.distance<=this.distanceMax){
-                this.distance += this.velo*25;
-                //System.out.println(this.bib+" "+this.imie+" "+this.nazwisko+": dystans przebyty: "+this.distance/1000);
-                this.rH.addToQue(this);
-                Thread.sleep(1000);
+            try {
+                while (this.distance <= this.distanceMax) {
+                    synchronized (this){
+                        this.distance += this.velo * 25;
+                        //System.out.println(this.bib+" "+this.imie+" "+this.nazwisko+": dystans przebyty: "+this.distance/1000);
+                        this.rH.addToQue(this);
+                    }
+                    Thread.sleep(1000);
+                }
+            } catch (InterruptedException e) {
+                System.exit(0);
             }
-        }catch(InterruptedException e){
-            System.exit(0);
-        }
     }
     public void start(){
         if(this.th == null){
@@ -49,6 +51,9 @@ public class Cyclist implements Runnable, Comparator<Cyclist> {
         }
     }
     public int compare(Cyclist c1, Cyclist c2) {
-        return (int) c1.distance - (int) c2.distance;
+        if(c1 == null || c2 ==null){
+            return 0;
+        }
+        return (int) c2.distance - (int) c1.distance;
     }
 }
