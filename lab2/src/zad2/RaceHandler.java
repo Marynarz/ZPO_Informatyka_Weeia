@@ -3,8 +3,10 @@ package zad2;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.PriorityQueue;
+import java.util.logging.Logger;
 
 public class RaceHandler {
+    private static final Logger logger = Logger.getLogger(Thread.currentThread().getStackTrace()[0].getClassName());
     private PriorityQueue<Cyclist> pQue;
     private Cyclist c1;
     private PriorityQueue<Cyclist> temp;

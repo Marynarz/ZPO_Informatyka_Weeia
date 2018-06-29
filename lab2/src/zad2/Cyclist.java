@@ -1,8 +1,11 @@
 package zad2;
 
 import java.util.Comparator;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Cyclist implements Runnable, Comparator<Cyclist> {
+    private static final Logger logger = Logger.getLogger(Thread.currentThread().getStackTrace()[0].getClassName());
     public String imie;
     public String nazwisko;
     public Integer bib;
@@ -13,6 +16,7 @@ public class Cyclist implements Runnable, Comparator<Cyclist> {
     private RaceHandler rH;
 
     public Cyclist(){
+        this.logger.log(Level.FINE,"Empty constuctor");
         this.imie = " ";
         this.nazwisko = " ";
         this.velo = 0;
@@ -22,6 +26,7 @@ public class Cyclist implements Runnable, Comparator<Cyclist> {
         this.rH = null;
     }
     public Cyclist(Integer bib, String imie, String nazwisko, double velo, double distanceM, RaceHandler rh){
+        this.logger.log(Level.FINE,"Normal constructor, name: "+imie+" surname: "+nazwisko);
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.velo = velo * (1/3.6);

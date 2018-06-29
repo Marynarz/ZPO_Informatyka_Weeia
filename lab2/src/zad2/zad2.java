@@ -4,9 +4,11 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class zad2 {
     public static void main(String [] args){
+        Logger logger = Logger.getLogger(Thread.currentThread().getStackTrace()[0].getClassName());
         List<Cyclist>kolarze = new LinkedList<Cyclist>();
         RaceHandler rH = new RaceHandler();
         //System.out.println("init ok");
